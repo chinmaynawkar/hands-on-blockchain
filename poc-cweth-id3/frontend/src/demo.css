@@ -1,0 +1,15 @@
+.demo-btn {
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 1.25rem;
+  margin: 16px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+.demo-btn:hover {
+  background: #0051a3;
+} 

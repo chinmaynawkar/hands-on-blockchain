@@ -1,0 +1,61 @@
+{
+  "name": "zkage-age-verification",
+  "version": "1.0.0",
+  "description": "Zero Knowledge Age Verification System - Prove you're over 18 without revealing your exact age",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "circuit:install": "npm install circomlib",
+    "circuit:compile": "circom circuits/age_proof.circom --r1cs --wasm --sym -o public/circuits",
+    "circuit:setup": "node scripts/setup-circuit.js",
+    "circuit:test": "node scripts/test-circuit.js",
+    "circuit:prove": "node scripts/generate-proof.js",
+    "circuit:verify": "node scripts/verify-proof.js"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "age-verification",
+    "privacy",
+    "circom",
+    "snarkjs",
+    "poseidon",
+    "zk-proofs"
+  ],
+  "author": "Blockchain Learning Project",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "snarkjs": "^0.7.5",
+    "circomlib": "^2.0.5",
+    "ffjavascript": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.1",
+    "typescript": "^5.6.3",
+    "tailwindcss": "^3.4.15",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
+    "jest": "^29.7.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/jest-dom": "^6.6.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+} 

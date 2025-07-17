@@ -1,0 +1,15 @@
+{
+  "name": "poc-cweth-id3",
+  "version": "1.0.0",
+  "description": "![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat-square&logo=solidity&logoColor=white) ![Circom](https://img.shields.io/badge/-Circom-AA4F8B?style=flat-square&logo=circom&logoColor=white) ![React](https://img.shields.io/badge/-React-4499cc?style=flat-square&logo=react&logoColor=white)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
